@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simone Fassio - Data Science Engineering Portfolio | EURECOM Master's Student">
+    <title>Simone Fassio | Data Science Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Simone Fassio</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Simone Fassio</span>
+                </h1>
+                <h2 class="hero-subtitle">Data Science Engineering Student</h2>
+                <p class="hero-description">
+                    Master's student at EURECOM specializing in Data Science. Passionate about transforming data into actionable insights and building intelligent systems. Currently seeking a 6-month internship in data science or machine learning.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-chart">
+                    <canvas id="hero-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate Data Science Engineering student in my final year at EURECOM, pursuing a Master's in Computer Science with a specialization in Data Science. My journey combines rigorous academic foundation with practical application of machine learning and statistical analysis.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>Master's in Computer Science - Data Science Track at EURECOM</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-target"></i>
+                            <div>
+                                <h3>Goal</h3>
+                                <p>Seeking a 6-month internship to apply data science skills in real-world challenges</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h3>Passion</h3>
+                                <p>Transforming complex data into meaningful insights and predictive models</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="skills-preview">
+                        <div class="skill-ring">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-ring">
+                            <span>ML/AI</span>
+                        </div>
+                        <div class="skill-ring">
+                            <span>Statistics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        Machine Learning & AI
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow/Keras</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-line"></i>
+                        Data Analysis & Visualization
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas/NumPy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib/Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Plotly/Dash</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS/Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter/Colab</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics Dashboard</h3>
+                        <p>Built an interactive dashboard for real-time data analysis using Python, Plotly, and machine learning models to predict business metrics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Dashboard</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>NLP Sentiment Analysis</h3>
+                        <p>Developed a sentiment analysis model using transformers and BERT for social media data classification with 94% accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Transformers</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Time Series Forecasting</h3>
+                        <p>Implemented LSTM neural networks for financial time series prediction, achieving superior performance over traditional methods.</p>
+                        <div class="project-tags">
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Time Series</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Results
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Computer Vision Pipeline</h3>
+                        <p>Created an end-to-end computer vision system for object detection and classification using CNN architectures.</p>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Detection</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Master's in Computer Science - Data Science Track</h3>
+                        <h4>EURECOM | 2023 - 2024 (Expected)</h4>
+                        <p>Specialized coursework in machine learning, statistical analysis, deep learning, and data mining. Final year focus on advanced AI techniques and practical applications.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Statistics</span>
+                            <span class="tag">Data Mining</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Science Research Project</h3>
+                        <h4>EURECOM | 2024</h4>
+                        <p>Currently working on advanced research project involving large-scale data analysis and machine learning optimization techniques.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analysis Intern</h3>
+                        <h4>Previous Experience | 2023</h4>
+                        <p>Gained hands-on experience in data preprocessing, statistical analysis, and visualization. Contributed to data-driven decision making processes.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Visualization</span>
+                            <span class="tag">Statistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor's Degree</h3>
+                        <h4>University | 2020 - 2023</h4>
+                        <p>Strong foundation in mathematics, computer science fundamentals, and programming. Graduated with honors.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Mathematics</span>
+                            <span class="tag">Programming</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Ready to Start Your Next Data Science Project?</h3>
+                    <p>I'm currently seeking a 6-month internship opportunity where I can apply my data science skills and contribute to meaningful projects. Let's discuss how I can add value to your team.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 X XX XX XX XX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sophia Antipolis, France</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="cv.pdf" class="social-link" aria-label="Download CV" download>
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Simone Fassio. All rights reserved. | Built with passion for data science.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
