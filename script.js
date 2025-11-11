@@ -144,9 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initialize hero chart
-    initHeroChart();
-    
     // Add typing effect to hero title
     initTypingEffect();
 });
@@ -190,125 +187,6 @@ function showNotification(message, type = 'success') {
             document.body.removeChild(notification);
         }, 300);
     }, 5000);
-}
-
-// Hero chart initialization
-function initHeroChart() {
-    const canvas = document.getElementById('hero-chart');
-    if (!canvas) return;
-    
-    const ctx = canvas.getContext('2d');
-    canvas.width = 280;
-    canvas.height = 280;
-    
-    // Data for the chart (representing data science skills)
-    const data = [85, 78, 92, 88, 75];
-    const labels = ['Python', 'ML/AI', 'Statistics', 'Data Viz', 'SQL'];
-    const colors = [
-        '#3b82f6',
-        '#10b981', 
-        '#f59e0b',
-        '#ef4444',
-        '#8b5cf6'
-    ];
-    
-    // Draw radar chart
-    drawRadarChart(ctx, data, labels, colors, 280, 280);
-}
-
-// Radar chart drawing function
-function drawRadarChart(ctx, data, labels, colors, width, height) {
-    const centerX = width / 2;
-    const centerY = height / 2;
-    const radius = Math.min(width, height) / 2 - 40;
-    const angleStep = (2 * Math.PI) / data.length;
-    
-    // Clear canvas
-    ctx.clearRect(0, 0, width, height);
-    
-    // Draw background grid
-    ctx.strokeStyle = '#e5e7eb';
-    ctx.lineWidth = 1;
-    
-    for (let i = 1; i <= 5; i++) {
-        ctx.beginPath();
-        const currentRadius = (radius / 5) * i;
-        for (let j = 0; j < data.length; j++) {
-            const angle = j * angleStep - Math.PI / 2;
-            const x = centerX + Math.cos(angle) * currentRadius;
-            const y = centerY + Math.sin(angle) * currentRadius;
-            
-            if (j === 0) {
-                ctx.moveTo(x, y);
-            } else {
-                ctx.lineTo(x, y);
-            }
-        }
-        ctx.closePath();
-        ctx.stroke();
-    }
-    
-    // Draw grid lines
-    for (let i = 0; i < data.length; i++) {
-        ctx.beginPath();
-        const angle = i * angleStep - Math.PI / 2;
-        const x = centerX + Math.cos(angle) * radius;
-        const y = centerY + Math.sin(angle) * radius;
-        ctx.moveTo(centerX, centerY);
-        ctx.lineTo(x, y);
-        ctx.stroke();
-    }
-    
-    // Draw data
-    ctx.strokeStyle = '#3b82f6';
-    ctx.fillStyle = 'rgba(59, 130, 246, 0.2)';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    
-    for (let i = 0; i < data.length; i++) {
-        const angle = i * angleStep - Math.PI / 2;
-        const value = (data[i] / 100) * radius;
-        const x = centerX + Math.cos(angle) * value;
-        const y = centerY + Math.sin(angle) * value;
-        
-        if (i === 0) {
-            ctx.moveTo(x, y);
-        } else {
-            ctx.lineTo(x, y);
-        }
-    }
-    
-    ctx.closePath();
-    ctx.stroke();
-    ctx.fill();
-    
-    // Draw data points
-    for (let i = 0; i < data.length; i++) {
-        const angle = i * angleStep - Math.PI / 2;
-        const value = (data[i] / 100) * radius;
-        const x = centerX + Math.cos(angle) * value;
-        const y = centerY + Math.sin(angle) * value;
-        
-        ctx.beginPath();
-        ctx.arc(x, y, 4, 0, 2 * Math.PI);
-        ctx.fillStyle = colors[i];
-        ctx.fill();
-    }
-    
-    // Draw labels
-    ctx.fillStyle = '#374151';
-    ctx.font = 'bold 12px Inter';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    
-    for (let i = 0; i < labels.length; i++) {
-        const angle = i * angleStep - Math.PI / 2;
-        const labelRadius = radius + 25;
-        const x = centerX + Math.cos(angle) * labelRadius;
-        const y = centerY + Math.sin(angle) * labelRadius;
-        
-        ctx.fillText(labels[i], x, y);
-    }
 }
 
 // Typing effect for hero title

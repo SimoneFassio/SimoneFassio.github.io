@@ -257,10 +257,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-buttons {
-    display: flex;
-    gap: var(--spacing-lg);
+    display: grid;
+    gap: var(--spacing-base);
     margin-bottom: var(--spacing-3xl);
     animation: fadeInUp 1s ease 0.6s both;
+}
+
+.hero-buttons-primary,
+.hero-buttons-secondary {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.hero-buttons-secondary {
+    align-items: center;
 }
 
 .btn-primary, .btn-secondary {
@@ -297,6 +307,16 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+.btn-compact {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    border-radius: var(--radius-base);
+}
+
+.btn-compact i {
+    font-size: var(--font-size-lg);
 }
 
 .hero-stats {
@@ -338,6 +358,14 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.hero-photo {
+    width: 320px;
+    max-width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    object-fit: cover;
 }
 
 /* About Section */
@@ -684,9 +712,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--spacing-3xl);
     margin-bottom: var(--spacing-3xl);
+    justify-items: start;
 }
 
 .contact-text h3 {
@@ -847,6 +876,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-buttons {
+        justify-items: center;
+    }
+
+    .hero-buttons-primary,
+    .hero-buttons-secondary {
         justify-content: center;
         flex-wrap: wrap;
     }
